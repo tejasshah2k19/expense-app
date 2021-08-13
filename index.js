@@ -13,7 +13,7 @@ app.use(cors({
     allowedHeaders: "*"
 }))
 
-app.use("/api/admin",adminRoutes)
+// app.use("/api/admin",adminRoutes)
 app.use("/api/users",userRoutes)
 
 app.listen(3000,function(){
@@ -21,7 +21,7 @@ app.listen(3000,function(){
 })
  
 
-mongoose.connect("mongodb://localhost:27017/mydb",{useNewUrlParser:true})
+mongoose.connect("mongodb://localhost:27017/expense",{useNewUrlParser:true})
 var db = mongoose.connection 
 if(db){
     console.log("dbStarted");
