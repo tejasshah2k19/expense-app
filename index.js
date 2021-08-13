@@ -13,7 +13,7 @@ app.use(cors({
     allowedHeaders: "*"
 }))
 
-// app.use("/api/admin",adminRoutes)
+ app.use("/api/admin",adminRoutes)
 app.use("/api/users",userRoutes)
 
 app.listen(3000,function(){
